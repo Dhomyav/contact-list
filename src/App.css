@@ -1,38 +1,133 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: whitesmoke;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  height: 100vh;
+  flex-direction: column;
+  
+}
+
+.container h1{
+  margin: 43px;
+}
+
+.inputC{
+  
+  padding: 10px;
+}
+.inputC label{
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.inputC input{
+  font-size: 20px;
+  padding: 6px;
+  border-radius: 15px;
+}
+
+.container button{
+  margin: 23px;
+  margin-left: 163px;
+  font-size: 17px;
+  padding: 8px;
+  text-align: center;
+  background-color: #3131ff;
+  cursor: pointer;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.main{
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.main1{
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+}
+
+.main1 h4{
+  margin: 20px;
+}
+.head{
+  display: flex;
+  font-size: x-large;
+
+}
+
+.log{
+  margin-left: 23px;
+}
+
+.log img{
+  border-radius: 50%;
+  
+}
+
+/* .a1{ */
+  /* margin-top: 23px; */
+/* } */
+.a2{
+  width: 100%;
+  /* height: 5vh; */
+}
+#psw{
+  margin-left:0.5rem;
+}
+
+.btn{
+  border-radius: 10px;
+  font-size: 17px;
+  padding: 8px;
+  text-align: center;
+  background-color: #3131ff;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 15rem;
+}
+@media screen and (max-width: 1300px) {
+  .btn {
+   right: 10rem;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 1010px) {
+  .btn {
+   right: 5rem;
   }
+}
+@media screen and (max-width: 760px) {
+  .btn {
+   right: 2rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .btn {
+   right: 1rem;
+  }
+  .main1{
+    width: 75%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .main1{
+    width: 60%;
+  }
+}
+
+.text-center{
+  text-align: center;
 }
